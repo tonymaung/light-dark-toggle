@@ -26,7 +26,7 @@ function toggleDarkLight(isDark){
     nav.style.backgroundColor = isDark? 'rgb(0 0 0 / 50%)' :'rgb(255 255 255 / 50%)';
     textBox.style.backgroundColor = isDark? "rgb(255 255 255 / 50%)" : "rgb(0 0 0 / 50%)";
 	document.documentElement.setAttribute('data-theme', isDark? 'dark' : 'light');
-	logo.style.filter =  isDark ? 'invert(31%) sepia(96%) saturate(3371%) hue-rotate(253deg) brightness(100%) contrast(101%)' : 'invert(66%) sepia(67%) saturate(4405%) hue-rotate(323deg) brightness(100%) contrast(108%)';
+	icon.style.filter =  isDark ? 'invert(31%) sepia(96%) saturate(3371%) hue-rotate(253deg) brightness(100%) contrast(101%)' : 'invert(66%) sepia(67%) saturate(4405%) hue-rotate(323deg) brightness(100%) contrast(108%)';
 	text.innerText = isDark? 'Dark Mode' : 'Light Mode';
 	isDark? switchIcon.classList.replace('fa-sun','fa-moon') : switchIcon.classList.replace('fa-moon','fa-sun') ;
 	imageMode(isDark ? "dark" : "light");
